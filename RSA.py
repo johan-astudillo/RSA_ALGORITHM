@@ -1,17 +1,10 @@
 #!/usr/bin/env python
 # coding: utf-8
-
-
 import random
-import sys
 import os
-import time
-import socket
-
 
 os.system("cls")
 print("Autor: Johan Fernando Astudillo")
-
 
 generate_range_primes = int(input("Key Length: "))
 
@@ -94,14 +87,9 @@ message = int(input("Message to encrypt: "))
 
 #encrypt message
 message_encrypt = (message**get_co_prime)%(n_modulus)
-
-
 print("Message Encypt: " + str(message_encrypt))
 
-
+#descrypted message
 decrypted_message = (message_encrypt**modular_inverse)%(n_modulus)
-
-
-
 print("Message Descrypted: " + str(decrypted_message))
 
